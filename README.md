@@ -7,7 +7,7 @@ Esta versão mantém a correção de áudio para iPhone/Safari e permite ativar 
 ```js
 telas: {
   video: true,
-  whatsapp: true,
+  confirmacao: true,
   localizacao: true,
   presentes: true,
   dresscode: true,
@@ -27,7 +27,7 @@ Exemplo de convite somente com localização e contagem:
 ```js
 telas: {
   video: true,
-  whatsapp: false,
+  confirmacao: false,
   localizacao: true,
   presentes: false,
   dresscode: false,
@@ -75,3 +75,7 @@ Para usar esta tela, coloque sua arte em `assets/manual.webp` e deixe `manual: t
 - A cor dos números é alterada em `contagem.corNumero` no `config.js`.
 - A cor das legendas é alterada em `contagem.corLegenda`.
 - O contador redimensiona números, legendas e espaçamentos proporcionalmente ao bloco, evitando sobreposição.
+
+## Confirmação de presença
+
+Adicione `assets/confirmacao.webp` antes de publicar. A tela é informativa, sem envio de mensagens. Ajuste o botão Voltar no editor `?editor=1`, inclusive a opção de ocultar o texto caso já esteja na arte.

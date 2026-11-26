@@ -25,15 +25,6 @@ window.CONFIG = {
   // textos automáticos do convite.
   nome: "Ana Beatriz",
 
-  // ----- WHATSAPP (CONFIRMAR PRESENÇA) -----------------------------------
-  // numero: DDI + DDD + número, SÓ DÍGITOS (sem +, espaço, parênteses ou traço).
-  //         Ex.: 55 (Brasil) + 31 (DDD) + 985657116 -> "5531985657116"
-  // mensagem: texto que já vem pré-preenchido quando a pessoa abre o WhatsApp.
-  whatsapp: {
-    numero: "5511973842772",
-    mensagem: "Olá! Confirmo minha presença no aniversário da Ana Beatriz."
-  },
-
   // ----- LOCALIZAÇÃO (BOTÃO MAPA) ----------------------------------------
   // Link completo do Google Maps. Abra o local no Maps, clique em "Compartilar"
   // -> "Copiar link" e cole aqui (mantenha as aspas).
@@ -46,7 +37,7 @@ window.CONFIG = {
   // Quando estiver false, o hotspot, a tela e a opção do editor são removidos.
   telas: {
     video: true,
-    whatsapp: true,
+    confirmacao: true,
     localizacao: true,
     presentes: true,
     dresscode: true,
@@ -89,6 +80,7 @@ window.CONFIG = {
   // mostrarTexto: true mostra “Voltar”; false deixa apenas a área clicável.
   // A posição pode ser alterada no editor ?editor=1.
   botoesVoltar: {
+    confirmacao: { mostrarTexto:true, posicao: {left:29,top:84.35,width:42,height:5.3} },
     presentes: { mostrarTexto:false, posicao: {"left":24.2,"top":83.6,"width":48.25240552615814,"height":5.61357710872642} },
     dresscode: { mostrarTexto:false, posicao: {"left":30.281469648562297,"top":84.58400621694679,"width":39.22046600439297,"height":5.0793992128466705} },
     manual: { mostrarTexto:false, posicao: {"left":29.66802927815495,"top":84.3538491611661,"width":41.060693515375405,"height":5.309555171188598} }
